@@ -1,15 +1,38 @@
-**CS2261 Object-Oriented Programming Spring 2019**
+CMP SCI 2700 – Assembly Language Project
 
-**Project #1 [75 points]**
+Your program will find the sum of numbers input and display all of the input values. You will be writing
+an assembly language project (using the virtual machine described in class and available on Canvas) to
+perform a series of three tasks. These tasks will build on each other, starting with the simplest program
+and progressing to the full program. The full program will read in numbers from the keyboard until the
+value -1 is entered, then display all of the numbers that were entered, followed by their sum.
 
----------------------------------------------------------------------------------------------------
+**Task 1:**
 
-Due date is Wednesday, 02/13. Submit either &#39;script&#39; files or screenshots that will show your source code, results of compilation and execution.
+Write a program that will read in numbers until the value -1 is entered on the keyboard. Call this
+program ‘task1.asm’ (use the .txt suffix if you are using eclipse to write the program).
 
-Please, follow the proper programming style and include necessary comments.
+**Task 2:**
 
-1. [25 points] Exercise #3.29, p. 115: write a program that prompts the user to enter the center coordinates and radii of 2 circles and determines whether the second circle is inside the first or overlaps the first, or neither of them. See details of the assignment on pp. 115 – 116. Your output should show that your program correctly identifies all 3 possible cases.
+Make a copy of your ‘task1.asm’ file called ‘task2.asm’ using “cp task1.asm task2.asm” on the shell
+command line. This program should read in numbers until -1 is entered and then display the sum of all
+single digit numbers [-9, -2] and [0, 9] that were entered. - 1 is used a flag to end the program, do not
+use -1 in the sum.
 
-1. [25 points] The standard format of a vehicle plate number in Missouri is CCD CDC, where C stands for an upper-case character, and D stands for a digit. Write a program to generate and display 10 random plate numbers.
+**Task 3:**
 
-1. [25 points] Exercise # 5.51, p.204: write a program that prompts the user to enter 2 strings and displays the largest common prefix of these strings. See examples of sample runs on p. 204. The output of your program should demonstrate both situations: when strings have a common prefix and when they don&#39;t.
+Make a copy of ‘task2.asm’ and call it ‘task3.asm’. The stack must be used for this program. This final
+version should read in numbers until -1 is entered, it should display all of the numbers entered (not just
+single digit ones) followed by printing out the total of these numbers following these rules:
+
+```
+1) If a single digit number then multiply the single digit number to the accumulator.
+2) All other numbers then add the number to the accumulator.
+3) Do not display -1 as being entered, nor include it in the total.
+```
+**Submission:**
+
+Your submission has to run on the virtual machine used in class and must be written in that assembly
+language. You should submit it as an attachment on Canvas. The three files should have *.asm suffixes.
+If you used *.txt suffix, please change to *.asm before submission.
+
+
